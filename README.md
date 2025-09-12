@@ -1,20 +1,38 @@
 # Real-time-Face-Recognition-System
 # Real-time Face Recognition (YOLO) | 실시간 얼굴 인식
-
-> 카메라 입력을 이용한 **실시간 얼굴 인식 시스템**. 데이터 파이프라인 구축과 모델 개선으로 **정확도 70% → 98%** 달성, 실시간 추론 성능 구현. (기간: 2024.09–2024.11)  
-> 본 README의 지표/기간/핵심 구성은 포트폴리오 슬라이드 내용을 바탕으로 작성되었습니다. :contentReference[oaicite:1]{index=1}
-
----
-
-## ✨ 주요 기능 & 성과
-- YOLO 기반 얼굴 감지/인식 파이프라인
-- **정확도 70% → 86% → 98%** 단계적 개선(예: 좌표 확장 등 전처리/후처리 튜닝) :contentReference[oaicite:2]{index=2}
-- **약 3만 장** 규모 데이터 **자동화 학습 파이프라인** 구축(라벨 정합/증강/검증 분리) :contentReference[oaicite:3]{index=3}
-- OpenCV 스트리밍으로 **실시간 추론**(웹캠/RTSP)
-
-## 🔧 기술 스택
-- **Model**: YOLO (PyTorch)
-- **Runtime**: Python, PyTorch, OpenCV
-- **Train**: Albumentations(선택), DVC/W&B(선택), CUDA
-
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/5789989a-4fc2-4851-859e-10349438a4f0" />
+
+# 🎯 Real-time Face Recognition System
+> YOLO 기반 실시간 얼굴 인식 시스템 | 정확도 70% → 98% 달성
+
+![Face Recognition Demo](./images/face_recognition_demo.gif)
+
+## 📌 프로젝트 개요
+카메라를 통한 실시간 얼굴 인식 모델 개발 프로젝트로, YOLO 모델의 정확도를 70%에서 98%까지 향상시킨 컴퓨터 비전 프로젝트입니다.
+
+## 🚀 주요 성과
+- **정확도 향상**: YOLO 모델 정확도 70% → 98% (28%p 향상)
+- **데이터 파이프라인**: 3만장 얼굴 이미지 자동화 파이프라인 구축
+- **실시간 처리**: 실시간 얼굴 인식 성능 구현
+
+## 🛠 기술 스택
+- **Model**: YOLO, FaceNet
+- **Framework**: PyTorch, OpenCV
+- **Language**: Python
+- **Tools**: NumPy, CNN, Fine-tuning
+
+## 📊 성능 개선 과정
+![Performance Graph](./images/performance_graph.png)
+
+### 1단계: 초기 YOLO (70%)
+- 기본 YOLO 모델 적용
+- 제한적인 얼굴 인식 성능
+
+### 2단계: 좌표 확장 (86%)
+- 바운딩 박스 좌표 범위 확장
+- 얼굴 주변 컨텍스트 정보 활용
+
+### 3단계: 최종 모델 (98%)
+- Augmentation 제거로 정확도 향상
+- 배경 정보 활용한 성능 개선
+
