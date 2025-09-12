@@ -21,8 +21,7 @@
 - **Language**: Python
 - **Tools**: NumPy, CNN, Fine-tuning
 
-## 📊 성능 개선 과정
-![Performance Graph](./images/performance_graph.png)
+
 
 ### 1단계: 초기 YOLO (70%)
 - 기본 YOLO 모델 적용
