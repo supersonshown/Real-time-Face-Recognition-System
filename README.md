@@ -17,18 +17,4 @@
 - **Runtime**: Python, PyTorch, OpenCV
 - **Train**: Albumentations(선택), DVC/W&B(선택), CUDA
 
-## ⚡ 빠른 시작
-```bash
-# 1) 환경
-python -m venv .venv && source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-
-# 2) 가중치/데이터
-# - data/ 에 학습/검증 이미지와 labels(yolo format) 배치
-# - weights/ 에 베이스 가중치(yolo) 또는 사전학습 가중치 배치
-
-# 3) 실시간 추론(웹캠)
-python infer_realtime.py --weights weights/best.pt --source 0
-
-# 4) 이미지/비디오 추론
-python infer.py --weights weights/best.pt --source path/to/video.mp4
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/5789989a-4fc2-4851-859e-10349438a4f0" />
