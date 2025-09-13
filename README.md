@@ -19,6 +19,8 @@
 - 실용적인 성능 최적화
 
 ## 🏆 주요 성과
+<img width="772" height="269" alt="image" src="https://github.com/user-attachments/assets/85a1ed6d-77e1-437f-a8b1-2e17d2b0d10c" />
+
 
 ### 📈 성능 개선
 - **YOLO 모델 정확도 대폭 향상**: `70%` → `98%` (28% 정확도 향상)
